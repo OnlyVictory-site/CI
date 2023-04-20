@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Build Image') {
             steps {
-		            sh '/etc/init.d/docker start'
+		            // sh '/etc/init.d/docker start'
 	                sh 'docker build -t OnlyVictoryImg:$BUILD_NUMBER .'
             }
         }
