@@ -23,8 +23,8 @@ pipeline {
         }
         stage('Docker Push') {
             steps {
-                sh 'docker tag onlyvictoryimg:$BUILD_NUMBER http://20.228.182.157/onlyvictory/onlyvictoryimg:$BUILD_NUMBER'
-                sh 'docker push http://20.228.182.157:80/onlyvictory/onlyvictoryimg:$BUILD_NUMBER'
+                sh 'docker tag onlyvictoryimg:$BUILD_NUMBER 20.228.182.157:80/onlyvictory/onlyvictoryimg:$BUILD_NUMBER'
+                sh 'docker push 20.228.182.157:80/onlyvictory/onlyvictoryimg:$BUILD_NUMBER'
             }
         }
     }
