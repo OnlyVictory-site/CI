@@ -12,8 +12,8 @@ pipeline {
         }
         stage('Build Image') {
             steps {
-		            // sh '/etc/init.d/docker start'
-	                sh 'docker build -t OnlyVictoryImg:$BUILD_NUMBER .'
+		            sh '/etc/init.d/docker start'
+	                sh 'docker build -t onlyvictoryimg:$BUILD_NUMBER .'
             }
         }
         stage('Docker Login') {
