@@ -23,11 +23,15 @@ pipeline {
         }
         stage('Docker Push') {
             steps {
-                sh 'docker tag onlyvictoryimg http://20.228.182.157:80/onlyvictory/onlyvictoryimg:$BUILD_NUMBER'
+                sh 'docker tag onlyvictoryimg:$BUILD_NUMBER http://20.228.182.157/onlyvictory/onlyvictoryimg:$BUILD_NUMBER'
                 sh 'docker push http://20.228.182.157:80/onlyvictory/onlyvictoryimg:$BUILD_NUMBER'
             }
         }
     }
+
+
+
+
     post {
         always {
             sh 'docker logout http://20.228.182.157'
