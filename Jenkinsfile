@@ -55,7 +55,7 @@ pipeline {
         stage('Build Image') {
             steps {
 		            sh '/etc/init.d/docker start'
-	                sh 'docker build -t onlyvictory/onlyvictoryimg .'
+	                sh 'docker build -t yihoeun/onlyvictory/onlyvictoryimg .'
             }
         }
         stage('Docker Login') {
@@ -68,8 +68,8 @@ pipeline {
             steps {
                 // sh 'docker tag onlyvictoryimg:$BUILD_NUMBER 20.228.182.157:80/onlyvictory/onlyvictoryimg:$BUILD_NUMBER'
                 // sh 'docker push 20.228.182.157:80/onlyvictory/onlyvictoryimg:$BUILD_NUMBER'
-                sh 'docker tag onlyvictory/onlyvictoryimg onlyvictory/onlyvictoryimg:latest'
-                sh 'docker push onlyvictory/onlyvictoryimg:latest'
+                sh 'docker tag yihoeun/onlyvictory/onlyvictoryimg onlyvictory/onlyvictoryimg:latest'
+                sh 'docker push yihoeun/onlyvictory/onlyvictoryimg:latest'
             }
         }
     }
