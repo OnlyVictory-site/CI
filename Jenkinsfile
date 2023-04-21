@@ -61,7 +61,7 @@ pipeline {
         stage('Docker Login') {
             steps {
                 // sh 'echo $HARBOR_REGISTRY_CREDENTIALS_PSW | docker login http://20.228.182.157:80 -u $HARBOR_REGISTRY_CREDENTIALS_USR --password-stdin'       
-                sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin' // docker hub 로그인         
+                sh 'echo $DOCKERHUB_REGISTRY_CREDENTIALS_PSW | docker login -u $DOCKERHUB_REGISTRY_CREDENTIALS_USR --password-stdin' // docker hub 로그인         
             }
         }
         stage('Docker Push') {
