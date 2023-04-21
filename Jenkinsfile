@@ -68,8 +68,8 @@ pipeline {
             steps {
                 // sh 'docker tag onlyvictoryimg:$BUILD_NUMBER 20.228.182.157:80/onlyvictory/onlyvictoryimg:$BUILD_NUMBER'
                 // sh 'docker push 20.228.182.157:80/onlyvictory/onlyvictoryimg:$BUILD_NUMBER'
-                sh 'docker tag onlyvictoryimg:$BUILD_NUMBER onlyvictoryimg:$BUILD_NUMBER'
-                sh 'docker push onlyvictory/onlyvictoryimg:0.01'
+                sh 'docker tag yihoeun/onlyvictoryimg:$BUILD_NUMBER onlyvictoryimg:$BUILD_NUMBER'
+                sh 'docker push yihoeun/onlyvictory/onlyvictoryimg:0.01'
             }
         }
     }
