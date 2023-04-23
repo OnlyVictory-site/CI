@@ -55,6 +55,7 @@ pipeline {
         stage('Build Image') {
             steps {
 		            sh '/etc/init.d/docker start'
+		    	sh 'docker rmi yihoeun/onlyvictory:latest
 	                sh 'docker build -t yihoeun/onlyvictory .'
             }
         }
