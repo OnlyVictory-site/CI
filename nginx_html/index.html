@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="all-element">                           
+                <div class="profile">
+                    <img class="pro-img" src="image/profile.jpeg">          <!--프로필사진 및 내용 표시-->
+                    <div class="profile-list">
+                        <h1 class="pro-name">Name: Min Jeong</h1>
+                        <h1 class="pro-age">Age: 22</h1>
+                        <h1 class="pro-gender">gender: Female</h1>
+                    </div>
+                </div>
+
+        
+        <div class="grid-container">                                         <!--맛집 등록과 관광지 검색 패널 표시-->
+            <div class="left-area">
+                <div class="food-img-area">
+                    <div class="img-area">
+                        <img class="food-img" src="image/food.jpeg">         
+                    </div>
+                    <button class="food-find">                              <!--regester foor버튼 클릭시, register-food.html이동(jquery처리)-->
+                        <h1 class="food-txt">Register<br>Restaurant</h1>    
+                    </button>
+                </div>
+            </div>
+            <div class="right-area">
+                <div class="trip-img-area">
+                    <div class="img-area">
+                        <img class="trip-img" src="image/trip.jpeg">        
+                    </div>
+                    <button class="trip-find">                              <!--searchTrip버튼 클릭시, Search-trip이동(jquery처리)-->
+                        <h1 class="trip-txt">Search<br>Trip</h1>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <a href="index.html">
+            <h1 class="Home" >FOOD WEB</h1>                                 <!--메인 화면에 FoodWEB클릭시 메인 화면 새로고침-->
+        </a>
+        <footer>
+            <h1 class="my-name"></h1>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

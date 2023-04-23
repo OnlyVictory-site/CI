@@ -1,0 +1,319 @@
+body {                               /*index.html,main.html,register.html배경 화면 설정*/
+    background-color:beige;
+    left: 0;
+    top: 0;
+    margin: 0;
+}
+
+/*메인페이지*/
+.main-txt {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+/*로그인 패널*/
+.log-main {
+    display: none;              /*fadein효과를 주기 위해 첫 설정을 none으로 해줌*/        
+    background-color: rgba(255, 255, 255, 0.6) ;
+    position: absolute;
+    width: 250px;
+    height: 400px;
+    left: 50%;
+    top: 50%;
+    margin-top: -200px;
+    margin-left: -125px;
+    z-index: 100;
+    padding: 10px;
+    box-shadow: 0px 5px 10px #545454;
+    border-radius: 15px;
+}
+
+/*입력 칸 CSS*/
+.input-area {
+    position: absolute;
+    width: 170px;
+    left: 50%;
+    margin-left: -85px;
+    top: 55%;
+}
+/*아이디, 비밀번호 */
+#log-id, #log-pass {
+    width: 160px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/*div 로그인,회원가입 버튼*/
+.buttons {
+    position: absolute;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: auto;
+    grid-template-columns: 80px 80px;
+    top: 80%;
+    left: 50%;
+    margin-left: -85px;
+}
+/*button태그 로그인,회원가입 버튼 설정*/
+.log-in, .regis {
+    width: 100%;
+    background-color:#3C373A;
+    cursor: pointer;
+}
+
+/*로그인,회원가입 글씨 설정*/
+.txt {
+    padding: 0;
+    margin: 1;
+    font-size: 13px;
+    text-align: center;
+   
+    color: white;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/*메인페이지*/
+
+.all-element{
+    display:none;
+}
+/*FOODWEB글씨 설정*/
+.Home{
+    margin-bottom:0px;
+    font-weight:200;
+    font-size: 15vw;
+    line-height: 1;
+
+    position: absolute;
+    text-align:center;
+    left:0;
+    right:0;
+    bottom:0;
+    color:  #282828;
+}
+/*프로필*/
+.profile {
+    position: absolute;
+    width: 160px;
+    height: 250px;
+    left: 50%;
+    margin-left: -85px;
+    margin-top: 60px;
+}
+/*프로필 사진*/
+.pro-img {
+    margin-top: -30px;
+    box-shadow: 0px 5px 10px #545454;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    margin-left: -40px;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+/*프로필 내용 리스트*/
+.profile-list {
+    background-color: rgba(255, 255, 255,1)  ;
+    position: absolute;
+    width: 100%;
+    height: 130px;
+    top: 85px;
+    box-shadow: 0px 5px 10px #545454;
+    border-radius: 13px;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 100;
+}
+/*프로필 내용 글씨*/
+.pro-name, .pro-age, .pro-gender {
+    margin: 0;
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+}
+/* 프로필 사진에 마우스를 올렸을 때 프로필 내용을 나타내는 CSS적용 */
+.pro-img:hover +.profile-list {     opacity: 1;
+}
+
+/*register restaurant, search-trip패널*/
+.grid-container {
+    position: absolute;
+    width: 680px;
+    height: 400px;
+    left: 50%;
+    top: 50%;
+    margin-left: -373px;
+    margin-top: -270px;
+    display: grid;
+    grid-gap: 130px;
+    grid-template-rows: auto;
+    grid-template-columns: 300px 300px;
+}
+/*register restaurant, search-trip배경패널 */
+.left-area, .right-area {
+    background-color: rgba(255, 255, 255, 0.6) ;
+    
+    box-shadow: 0px 5px 10px #545454;
+    border-radius: 15px;
+}
+
+/*register restaurant이미지,글씨영역*/
+.food-img-area {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+}
+/*register restaurant, search-trip이미지 영역 */
+.img-area {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: 50px;
+}
+/*register restaurant이미지*/
+.food-img {
+    position: absolute;
+    width: 110%;
+}
+/*register restaurant버튼*/
+.food-find {
+    cursor:pointer;
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    top: 290px;
+    left: 50%;
+    margin-left: -100px;
+    box-shadow: 0px 3px 6px #545454;
+    background-color: #282828;
+}
+/*register restaurant글씨*/
+.food-txt {
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+}
+/*search-trip이미지,글씨 영역*/
+.trip-img-area {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+}
+/*search-trip이미지*/
+.trip-img {
+    position: absolute;
+    width: 100%;
+}
+/*search-trip버튼*/
+.trip-find {
+    cursor:pointer;
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    top: 290px;
+    left: 50%;
+    margin-left: -100px;
+    box-shadow: 0px 3px 6px #545454;
+    background-color: #282828;
+}
+/*search-trip글씨*/
+.trip-txt {
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+}
+/*2004412김민정영역*/
+footer {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    margin-top: -30px;
+    width: 100%;
+    height: 30px;
+    background-color: #282828;
+}
+/*2004412김민정글씨*/
+.my-name {
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 300;
+  
+}
+
+/*회원가입페이지*/
+
+.register-p-area {
+    display: none;
+    background-color:rgba(255, 255, 255, 0.6) ;
+    position: absolute;
+    width: 250px;
+    height: 400px;
+    left: 50%;
+    top: 50%;
+    margin-top: -200px;
+    margin-left: -125px;
+    z-index: 100;
+    padding: 10px;
+    box-shadow: 0px 5px 10px #545454;
+    border-radius: 15px;
+}
+/*회원가입윗글씨*/
+.regi-txt {
+    margin: 0;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 400;
+    font-style: italic;
+}
+/*회원가입속성기제 영역*/
+.regi-input-area {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+}
+/*input회원가입 속성 글씨 */
+.name, .age, select, #regi-id, #regi-pass {
+    width: 190px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+/*등록 버튼*/
+.submit {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+    background-color: #3C373A;
+    top: 330px;
+    cursor: pointer;
+}
+/*등록 버튼 글씨*/
+.submit-txt {
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 400;
+}
