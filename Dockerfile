@@ -10,6 +10,8 @@ COPY . .
 RUN rm /usr/share/nginx/html/index.html && \
     cp -r /nginx_html/* /usr/share/nginx/html/
 
+WORKDIR /nginx_html
+
 # 컨테이너에서 실행할 명령 설정
 CMD ["nginx", "-g", "daemon off;"]
 
