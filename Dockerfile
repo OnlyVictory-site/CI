@@ -2,7 +2,6 @@
 FROM nginx
 
 # 작업 디렉토리 설정
-WORKDIR /nginx_html
 
 # 로컬 디렉토리 복사
 COPY . .
