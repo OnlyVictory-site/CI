@@ -5,7 +5,7 @@ FROM nginx
 WORKDIR /nginx_html
 
 # 로컬 디렉토리 복사
-COPY nginx_html/ .
+COPY . .
 
 # 기존 파일 삭제 및 로컬 파일 복사
 RUN rm /usr/share/nginx/html/index.html && \
